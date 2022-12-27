@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/2022-ra-45-lifecycle-watches/static/css/main.c2d6c701.css",
+    "main.js": "/2022-ra-45-lifecycle-watches/static/js/main.486933bb.js",
+    "static/js/787.5cd42c2e.chunk.js": "/2022-ra-45-lifecycle-watches/static/js/787.5cd42c2e.chunk.js",
+    "index.html": "/2022-ra-45-lifecycle-watches/index.html",
+    "main.c2d6c701.css.map": "/2022-ra-45-lifecycle-watches/static/css/main.c2d6c701.css.map",
+    "main.486933bb.js.map": "/2022-ra-45-lifecycle-watches/static/js/main.486933bb.js.map",
+    "787.5cd42c2e.chunk.js.map": "/2022-ra-45-lifecycle-watches/static/js/787.5cd42c2e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2d6c701.css",
+    "static/js/main.486933bb.js"
+  ]
+}
