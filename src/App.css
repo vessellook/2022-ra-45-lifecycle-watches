@@ -1,38 +1,91 @@
-.App {
+.watch {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  margin: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.watch__inner {
+  margin: 20px auto 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.watch__delete-button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.watch__delete-button:hover {
+  background: #eee;
+}
+
+.arrow {
+  transform-origin: bottom;
+  border-left: 1px solid #000;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  height: calc(50% - 5px);
+}
+
+.arrow_hour {
+  height: 30%;
+}
+
+.arrow_second {
+  border-left-style: dashed;
+}
+
+.arrow_minute:after,
+.arrow_hour:after {
+  content: '\2B9D';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.watch-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  align-items: flex-end;
+  margin: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.watch-form__label {
+  display: block;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.watch-form__input,
+.watch-form__button {
+  height: 30px;
+  border: 1px solid #000;
+  line-height: 30px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.watch-form__button {
+  cursor: pointer;
+  background: #fff;
+  text-align: center;
+  width: 150px;
+}
+
+.watch-form__button:hover {
+  background: #eee;
 }
